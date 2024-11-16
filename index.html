@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structify - Learn DSA In C++</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header Part -->
+    <header>
+        <nav>
+            <h1>𝒮𝓉𝓇𝓊𝒸𝓉𝒾𝒻𝓎</h1>
+            <div class="navbar">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="#learn">Learn</a>
+                    <a href="#quiz">Quiz</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Content -->
+        <div class="hero hero-content">
+            <h2>Welcome to Structify</h2>
+            <p>Learn data structures and test your knowledge with engaging quizzes!</p>
+            <a href="#learn" class="btn" id="get-started">Get Started</a>
+        </div>
+            
+        <!-- Learn DSA part -->
+        <section id="learn">
+            <div class="learn-dsa">
+                <h2>Learn Data Structures In C++</h2>
+                <div class="array">
+                    <h3>Introduction To Array</h3>
+                    <p>An array is a linear data structure that stores a collection of elements, typically of the same data type, in a contiguous block of memory. Each element in an array can be accessed using its index, which is the position of the element within the array. Here are some key points about arrays:</p>
+                    <img src="./array1.jpg" alt="array" class="img1 left-fade">
+
+                    <ol class="left-fade">
+                        <li><b>Fixed Size</b>: The size of an array is defined when it's created and cannot be changed. This means the number of elements it can hold is fixed.</li>
+                        <li><b>Indexing</b>: Array elements are accessed using an index, with the first element at index 0. This allows for quick access to any element by its index.</li>
+                        <li><b>Memory Allocation</b>: Arrays allocate a contiguous block of memory, which enables efficient element access but limits flexibility compared to other data structures.</li>
+                        <li><b>Data Type</b>: Arrays are generally homogeneous, meaning all elements are of the same data type (like integers, floats, strings, etc.).</li>
+                        <li><b>Operations</b>: Common operations on arrays include accessing, updating, and iterating over elements. Searching and sorting can also be performed, though they may require additional algorithms</li>
+                    </ol>
+                    <img src="./array2.png" alt="array"  class="img2 right-fade">
+                    <ol start="6" class="right-fade">
+                        <li><b>Advantages</b>:
+                            <ul>
+                                <li><b>Fast Access</b>: Constant-time access to elements using their index.</li>
+                                <li><b>Memory Efficiency</b>: Arrays use a contiguous memory block, which is generally efficient for storing a large number of elements.</li>
+                            </ul>
+                        </li>
+                        <li><b>Disadvantages</b>:
+                            <ul>
+                                <li><b>Fixed Size</b>: Arrays have a fixed size, making it hard to add or remove elements dynamically</li>
+                                <li><b>Insertion/Deletion</b>: Inserting or deleting elements (other than at the end) requires shifting elements, which can be inefficient</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="linkedlist left-fade">
+                    <h3>Introduction to Linkedlist</h3>
+                    <p>A Linked List is a linear data structure consisting of nodes where each node contains a data element and a pointer (or reference) to the next node in the sequence. Unlike arrays, linked lists are dynamic and can grow or shrink in size during runtime by allocating and deallocating memory. Linked lists are often used when the size of the data structure is unknown or frequently changing.</p>
+    
+                        <img src="./linked-list2.png" alt="linkedlist" class="img2 left-fade">
+                        <p class="subheading">Types of Linkedlist</p>
+                        <ol>
+                        <li><b>Singly Linked List :</b>
+                            <ul>
+                                <li>Each node points to the next node in the sequence.</li>
+                                <li>The last node points to NULL, indicating the end of the list.</li>
+                                <li>Allows traversal in only one direction (from head to tail).</li>
+                            </ul>
+                        </li>
+
+                        <li><b>Doubly Linked List :</b> 
+                            <ul>
+                                <li>Each node contains two pointers: one to the next node and one to the previous node.</li>
+                                <li>This allows traversal in both directions (forward and backward)</li>
+                                <li>Takes more memory per node but provides greater flexibility in navigating and modifying the list</li>
+                            </ul>
+                        </li>
+                        <li><b>Circular Linked List : </b>
+                            <ul>
+                                <li>The last node points back to the first node, forming a circular structure</li>
+                                <li>Can be either singly or doubly linked</li>
+                                <li>Useful in applications that require a cyclic iteration through elements (e.g., round-robin scheduling)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="stack right-fade">
+                    <h3>Introduction to Stack</h3>
+                    <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It means that the element added last is removed first.</p>
+
+                    <img src="./stack.png" alt="Stack" class="img1" id="st">
+                    <img src="./stack2.png" alt="Stack" class="img1">
+                    
+                    <p class="subheading">Key Characteristics of a Stack</p>
+                    <ol>
+                        <li><b>LIFO Order</b>: The last item inserted is the first to be removed</li>
+                        <li><b>Operations</b>:
+                            <ul>
+                                <li><b>Push:</b> Adds an element to the top of the stack.</li>
+                                <li><b>Pop:</b> Removes and returns the top element of the stack</li>
+                                <li><b>Peek/Top:</b> Retrieves the top element without removing it</li>
+                                <li><b>isEmpty:</b> Checks if the stack is empty</li>
+                            </ul>
+                        </li>
+                        <li><b>Storage</b>: Can be implemented using arrays or linked lists.</li>
+                    </ol>
+                </div>
+
+                <div class="queue left-fade">
+                    <h3>Introduction To Queue</h3>
+                    <img src="./circular-queue.png" alt="Circular queue" class="img1" id="cq">
+                    <p>A queue is a linear data structure that follows the First In, First Out (FIFO) principle. It means the element added first is removed first.</p>
+
+                    <p class="subheading">Key Characteristics of a Queue</p>
+
+                    <ol>
+                        <li><b>FIFO Order:</b> The element inserted first will be removed first</li>
+                    </ol>
+                    <img src="./Queue.png" alt="queue" class="img2" id="q">
+                    <ol start="2">
+                        <li><b>Operations:</b>
+                            <ul>
+                                <li><b>Enqueue:</b> Adds an element to the rear of the queue.</li>
+                                <li><b>Dequeue:</b> Removes and returns the element from the front of the queue.</li>
+                                <li><b>Front/Peek:</b> Retrieves the front element without removing it.</li>
+                                <li><b>isEmpty:</b> Checks if the queue is empty.</li>
+                                <li><b>isFull</b>(in array-based queues): Checks if the queue has reached its capacity.</li>
+                            </ul>
+                        </li>
+                        <li><b>Storage:</b> Can be implemented using arrays or linked lists.</li>
+                    </ol>
+                    <!-- <img src="./queue2.png" alt="queue" class="img1"> -->
+                    <p class="subheading">Types of Queues</p>
+                    <ol>
+                        <li><b>Simple Queue:</b> Follows basic FIFO rules.</li>
+                        <li><b>Circular Queue:</b> The last position connects back to the first, utilizing memory efficiently.</li>
+                        <li><b>Priority Queue:</b> Elements are dequeued based on priority rather than order</li>
+                        <li><b>Deque (Double-Ended Queue):</b> Allows insertion and deletion from both ends.</li>
+                    </ol>
+                </div>
+
+                <div class="time-complexity">
+                    <p class="subheading" style="text-align: center;">Time Complexity</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Structure</th>
+                                <th>Insertion</th>
+                                <th>Deletion</th>
+                                <th>Traversal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Array </td>
+                                <td>O(1) </td>
+                                <td>O(n) </td>
+                                <td>O(n)</td>
+                            </tr>
+                            <tr>
+                                <td>Linked List</td>
+                                <td>O(1) </td>
+                                <td>O(1) </td>
+                                <td>O(n)</td>
+                            </tr>
+                            <tr>
+                                <td>Stack</td>
+                                <td>O(1) </td>
+                                <td>O(1) </td>
+                                <td>O(n)</td>
+                            </tr>
+                            <tr>
+                                <td> Queue</td>
+                                <td>O(1)</td>
+                                <td>O(1)</td>
+                                <td>O(n)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz part -->
+        <section id="quiz">
+            <div class="quizz">
+                <h2>Take the Quiz</h2>
+                <p>Challenge yourself with our multiple-choice questions and improve your knowledge.</p>
+
+                <p class="subheading topic">Multiple-Choice Questions(Select Only One Answers)</p>
+                <div class="mcq">
+                    <div class="question">
+                        <p>1. An array is a _________ data structure</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1"> Linear </label></li>
+                            <li><label><input type="radio" name="q1"> Non-Linear</label></li>
+                            <li><label><input type="radio" name="q1"> Both</label></li>
+                            <li><label><input type="radio" name="q1"> None of the above</label></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <p>2. An Linkedlist is a _________ data structure</b></p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2"> Linear </label></li>
+                            <li><label><input type="radio" name="q2"> Non-Linear</label></li>
+                            <li><label><input type="radio" name="q2"> Both</label></li>
+                            <li><label><input type="radio" name="q2"> None of the above</label></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <p>3. Which data structure follows LIFO principle ?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" > Array</label></li>
+                            <li><label><input type="radio" name="q3" > Linked List</label></li>
+                            <li><label><input type="radio" name="q3" > Stack</label></li>
+                            <li><label><input type="radio" name="q3" > Queue</label></li>
+                        </ul>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question">
+                        <p>4. Which data structure follows FIFO principle ?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" > Array</label></li>
+                            <li><label><input type="radio" name="q4" > Linked List</label></li>
+                            <li><label><input type="radio" name="q4" > Stack</label></li>
+                            <li><label><input type="radio" name="q4" > Queue</label></li>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- Question 5 -->
+
+                    <div class="question">
+                        <p>5. In a single linkedlist we can traverse in _____ direction ?</p>
+                        <div>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" > One</label></li>
+                                <li><label><input type="radio" name="q5" > Two</label></li>
+                                <li><label><input type="radio" name="q5" > Three</label></li>
+                                <li><label><input type="radio" name="q5" > Four</label></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Answers -->
+                    <div class="answers">
+
+                        <p class="subheading">Answers</p>
+                        <ol>
+                            <li> ->Linear</li>
+                            <li> ->Linear</li>
+                            <li> ->Stack</li>
+                            <li> ->Queue</li>
+                            <li> ->One</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <form action="index.html">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter Your Name" id="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="example@gmail.com" id="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="Enter Your Message"></textarea>
+                    
+                    <input type="submit" value="Send Message" class="btn1">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <h1>𝒮𝓉𝓇𝓊𝒸𝓉𝒾𝒻𝓎</h1>
+        <p>&copy; 2024 Structify. All rights reserved. This Website is Created ByJit Dhank</p>
+        <div class="images">
+            <a href="https://www.linkedin.com/in/jitdhank004/" target="_blank"><img src="./linkedin.svg" alt="Linkedin"></a>
+            <a href="https://github.com/Jit-006" target="_blank"><img src="./github.svg" alt="Github"></a>
+            <a href="#"><img src="./facebook.svg" alt="Fcaebook"></a>
+        </div>
+    </footer>
+</body>
+</html>
